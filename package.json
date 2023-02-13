@@ -1,0 +1,27 @@
+{
+  "name": "tindpet",
+  "version": "1.0.0",
+  "description": "App to connect people with pet protectors",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon -e js,hbs,css app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tindpet/tindpet.git"
+  },
+  "author": "Silvia Edreira and Leandro Pereyra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tindpet/tindpet/issues"
+  },
+  "homepage": "https://github.com/tindpet/tindpet#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
