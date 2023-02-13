@@ -1,7 +1,8 @@
 const express = require("express");
 const logger = require("morgan");
+require
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 module.exports = (app) => {
   app.use(logger("dev"));
