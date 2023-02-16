@@ -6,4 +6,5 @@ const app = express();
 require("./config/server.config")(app);
 require("./config/hbs.config")(app);
 require("./config/pets.config")(app);
+require("./config/user.config")(app);
 
