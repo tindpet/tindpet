@@ -6,6 +6,7 @@ const petSchema = new Schema({
   age: Number,
   specie: String,
   gender: String,
+  image: String
 });
 
 module.exports = mongoose.model("Pet", petSchema);

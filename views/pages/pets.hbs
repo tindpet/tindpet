@@ -1,0 +1,13 @@
+<h2>PETS</h2>
+<form>
+    <input value="{{query.search}}" name="search" type="text" placeholder="Search"/>
+</form>
+<hr>
+
+{{#each pets as |pet|}}
+    <img src="{{pet.image}}">
+    <a href="/pet?user={{pet.name}}">
+        <p>{{pet.specie}}</p>
+    </a>
+    <a href="/pets/{{pet.id}}">Detail</a>
+{{/each}}

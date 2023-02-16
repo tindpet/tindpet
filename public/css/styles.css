@@ -5,3 +5,7 @@
   background-color: rgb(28, 28, 28);
   color: aliceblue;
 }
+
+img {
+  max-width: 200px;
+}
