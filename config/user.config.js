@@ -1,14 +1,12 @@
 const express = require("express");
 const user = require("../controllers/user.controllers");
 
-const routes = express.Router();
+const routesUser = express.Router();
 
-routes.get("/signup", user.create);
-routes.post("/newuser", user.doCreate);
+routesUser.get("/signup", user.create);
+routesUser.post("/newuser", user.doCreate);
 
-routes.get("/login", user.login);
-routes.post("/login", user.doLogin);
+routesUser.get("/login", user.login);
+routesUser.post("/login", user.doLogin);
 
-module.exports = (app) => {
-  app.use("/", routes);
-};
+module.exports = routesUser

@@ -1,13 +1,22 @@
 <h2>PETS</h2>
 <form>
-    <input value="{{query.search}}" name="search" type="text" placeholder="Search"/>
+  <input
+    value="{{query.search}}"
+    name="search"
+    type="text"
+    placeholder="Search"
+  />
 </form>
-<hr>
+<hr />
 
-{{#each pets as |pet|}}
-    <img src="{{pet.image}}">
-    <a href="/pet?user={{pet.name}}">
-        <p>{{pet.specie}}</p>
-    </a>
-    <a href="/pets/{{pet.id}}">Detail</a>
-{{/each}}
+<div class="pets">
+  {{#each pets as |pet|}}
+    <div class="pet">
+      <img src="{{pet.image}}" />
+      <div class="text">
+        <p>{{pet.name}}, {{pet.age}}</p>
+        <a href="/pets/{{pet.id}}">Detail</a>
+      </div>
+    </div>
+  {{/each}}
+</div>

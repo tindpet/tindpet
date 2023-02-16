@@ -1,14 +1,10 @@
-
-
 const express = require("express");
 const pets = require("../controllers/pets.controllers");
 
-const routes = express.Router();
+const routesPets = express.Router();
 
-routes.get("/", pets.home);
+routesPets.get("/", pets.home);
 
-routes.get('/pets', pets.list)
+routesPets.get('/pets', pets.list)
 
-module.exports = (app) => {
-  app.use("/", routes);
-};
+module.exports = routesPets

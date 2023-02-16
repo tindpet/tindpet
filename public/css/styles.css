@@ -7,5 +7,37 @@
 }
 
 img {
-  max-width: 200px;
+  max-height: 300px;
+}
+
+/* Pets */
+
+.pets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.pet {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.pet img {
+  position: absolute;
+}
+
+.pet .text {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.pet .text p,
+.pet .text a {
+  background-color: transparent;
 }
