@@ -1,7 +1,20 @@
-<h1>Login</h1>
+<div class="form-container">
+  <h1>Log in</h1>
 
-<form action="/login" method="POST">
-  <input type="email" name="email" />
-  <input type="password" name="password" />
-  <button type="submit">Login</button>
-</form>
+  <form action="/login" method="POST">
+    <div class="info">
+      <div class="form-section">
+        <label for="email">What's your email?</label>
+        <input type="email" name="email" />
+      </div>
+      <div class="form-section">
+        <label for="password">Now your password to log in</label>
+        <input type="password" name="password" />
+      </div>
+
+      <div class="form-section">
+        <button type="submit">Log in</button>
+      </div>
+    </div>
+  </form>
+</div>

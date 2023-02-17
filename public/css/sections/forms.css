@@ -1,0 +1,68 @@
+.form-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+}
+
+.form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.form-container .image,
+.form-container .info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.form-container form label {
+  font-size: 1.5rem;
+}
+
+.form-container form .preview {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.form-container form .preview img {
+  width: 300px;
+}
+
+.form-container .form-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.form-container .form-section input {
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.form-container .form-section select {
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.form-container .form-section textarea {
+    font-size: 1rem;
+  }
+
+.form-container .form-section button {
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 0 auto;
+}

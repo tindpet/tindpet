@@ -8,6 +8,7 @@ const ADMIN_USERS = (process.env.ADMIN_USERS || "admin@admin.com")
 
 const userSchema = new Schema({
   name: String,
+  surename: String,
   email: String,
   password: String,
   role: {
@@ -15,6 +16,8 @@ const userSchema = new Schema({
     enum: ["admin", "user", "protector"],
     default: "user",
   },
+  image: String,
+  about: String,
 });
 
 userSchema.pre("save", function (next) {

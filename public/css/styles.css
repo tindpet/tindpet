@@ -1,3 +1,5 @@
+@import url('./sections/forms.css');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +8,9 @@
   color: aliceblue;
 }
 
-img {
+/* img {
   max-height: 300px;
-}
+} */
 
 /* Pets */
 
