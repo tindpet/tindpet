@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   background-color: rgb(236, 235, 235);
-  color: aliceblue;
+  color:darkslateblue;
   font-family: cursive;
 }
 
@@ -59,13 +59,15 @@
   background: transparent;
 }
 
-.title {
+.title_pet {
   font-size:x-large;
+  color: aliceblue;
 }
 
-.details {
+.detail {
   margin: 100px;
   padding: 10px;
+  color:aliceblue;
 
 }
 
