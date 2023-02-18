@@ -1,18 +1,35 @@
 @import url('./sections/forms.css');
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(236, 235, 235);
   color: aliceblue;
+  font-family: cursive;
 }
 
-/* img {
-  max-height: 300px;
-} */
-
 /* Pets */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+ /* border: 2px solid blueviolet */
+  padding: 10px;
+}
+
+.logo {
+  height: 65px;
+  width: 85px;
+}
+
+.navbar {
+  background-image: url('../images/navbar.jpg');
+}
+
+.navbar_text {
+  background-color: none;
+  background: transparent;
+}
+
 
 .pets {
   display: grid;
@@ -24,22 +41,39 @@
 
 .pet {
   position: relative;
-  width: 200px;
+  width: 260px;
   height: 300px;
   overflow: hidden;
 }
 
 .pet img {
   position: absolute;
+  max-height: 350px;
 }
 
 .pet .text {
+  font-family: cursive;
+  font-weight: 300;
   position: absolute;
   bottom: 0;
-  background-color: transparent;
+  background: transparent;
+}
+
+.title {
+  font-size:x-large;
+}
+
+.details {
+  margin: 100px;
+  padding: 10px;
+
 }
 
 .pet .text p,
 .pet .text a {
   background-color: transparent;
+}
+
+.search {
+  padding: 10px;
 }

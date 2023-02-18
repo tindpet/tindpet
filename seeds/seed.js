@@ -3,7 +3,6 @@ const petModel = require("../models/pets.model");
 const pets = require("./pets");
 
 const seed = () => {
-  dataBase.connect(
     petModel
       .deleteMany()
       .then(() => {
@@ -14,7 +13,6 @@ const seed = () => {
       .catch((error) => {
         console.log(`The DataBase has not been seeded: ${error}`);
       })
-  );
 };
 
 seed();

@@ -1,6 +1,5 @@
-<h2>PETS</h2>
 <form>
-  <input
+  <input class="search"
     value="{{query.search}}"
     name="search"
     type="text"
@@ -14,8 +13,8 @@
     <div class="pet">
       <img src="{{pet.image}}" />
       <div class="text">
-        <p>{{pet.name}}, {{pet.age}}</p>
-        <a href="/pets/{{pet.id}}">Detail</a>
+        <p class="title">{{pet.name}}, {{pet.age}}</p>
+        <a class='details' href="/pets/{{pet.id}}">Detail</a>
       </div>
     </div>
   {{/each}}
