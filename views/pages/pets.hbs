@@ -1,20 +1,25 @@
-<form>
-  <input class="search"
-    value="{{query.search}}"
-    name="search"
-    type="text"
-    placeholder="Search"
-  />
-</form>
-<hr />
+<div class="search-bar">
+  <form>
+    <input
+      class="search"
+      value="{{query.search}}"
+      name="search"
+      type="search"
+      placeholder="Search"
+    />
+  </form>
+</div>
 
 <div class="pets">
   {{#each pets as |pet|}}
-    <div class="pet">
-      <img src="{{pet.image}}" />
+    <div class="pet" style="background-image:url('{{pet.image}}')">
+      <div class="bgcolor">
+      </div>
       <div class="text">
         <p class="title_pet">{{pet.name}}, {{pet.age}}</p>
-        <a class='detail' href="/pets/{{pet.id}}">Detail</a>
+        <div class="detail">
+          <a href="/pets/{{pet.id}}">Detail</a>
+        </div>
       </div>
     </div>
   {{/each}}

@@ -1,6 +1,8 @@
 require("dotenv").config();
 require("./config/db.config");
 
+const cloudinary = require('cloudinary').v2;
+
 const express = require("express");
 const app = express();
 const logger = require("morgan");

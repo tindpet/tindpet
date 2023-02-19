@@ -6,6 +6,10 @@ module.exports.create = (req, res) => {
 };
 
 module.exports.doCreate = (req, res, next) => {
+  if (req.file) {
+    req.body.image = req.file.path
+  }
+  
   UserModel.findOne({ email: req.body.email })
     .then((user) => {
       if (user) {

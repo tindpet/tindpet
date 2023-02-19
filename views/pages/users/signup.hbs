@@ -1,7 +1,7 @@
 <div class="form-container">
   <h1>Join us!</h1>
 
-  <form action="/newuser" method="POST">
+  <form action="/newuser" method="POST" enctype="multipart/form-data">
     <div class="image">
       <div class="preview">
         <img id="imgPreview" src="/images/imgPreview.jpg" />
@@ -9,6 +9,7 @@
       <div class="form-section">
         <label for="image">We would like you to have a photo so we can meet you</label>
         <input
+          id="#input-photo"
           type="file"
           accept="image"
           name="image"
