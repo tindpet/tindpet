@@ -6,9 +6,9 @@ const storage = require('../config/cloudinary.config')
 const routesUser = express.Router();
 
 routesUser.get("/signup", user.create);
-routesUser.post("/newuser", user.doCreate);
+routesUser.post("/newuser", storage.single('image'), user.doCreate);
 
 routesUser.get("/login", user.login);
-routesUser.post("/login", storage.single('image'), user.doLogin);
+routesUser.post("/login", user.doLogin);
 
 module.exports = routesUser

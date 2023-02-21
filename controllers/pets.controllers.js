@@ -21,3 +21,20 @@ module.exports.list = (req, res) => {
     });
 };
 
+
+
+module.exports.createPet = (req, res) => {
+  res.render("pages/newpet");
+};
+
+module.exports.doCreatePet = (req, res, next) => {
+  if (req.file) {
+    req.body.image = req.file.path
+  }
+  
+  Pet.findOne({ email: req.body.email })
+    .then(
+        res.render("pages/newpet")
+        )
+    .catch((error) => next(error));
+};

@@ -1,0 +1,26 @@
+<div class="form-container">
+  <h1>If you want to add a new member of your protector, we need some information before!</h1>
+
+  <form action="/newpet" method="POST" enctype="multipart/form-data">
+    <div class="image">
+      <div class="preview">
+        <img id="imgPreview" src="/images/img-pet-preview.jpg" />
+      </div>
+      <div class="form-section">
+        <label for="image">We need a photo for getting to know your animal!</label>
+        <input
+          id="#input-photo-pet"
+          type="file"
+          accept="image"
+          name="image"
+          onchange="previewImage(event, '#imgPreview')"
+        />
+      </div>
+    </div>
+      <div class="form-section">
+        <label for="about">How is he/she? What specie is, what is his/her charaacter...</label>
+        <textarea name="about" cols="30" rows="10"></textarea>
+      </div>
+<script
+  src="/scripts/imgPreview.js"
+></script>

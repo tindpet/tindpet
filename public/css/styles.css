@@ -1,4 +1,5 @@
 @import url('./sections/forms.css');
+@import url('./sections/newpet.css');
 
 * {
   box-sizing: border-box;
