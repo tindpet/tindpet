@@ -8,7 +8,7 @@ const ADMIN_USERS = (process.env.ADMIN_USERS || "admin@admin.com")
 
 const userSchema = new Schema({
   name: String,
-  surename: String,
+  lastname: String,
   email: String,
   password: String,
   role: {
@@ -17,7 +17,7 @@ const userSchema = new Schema({
     default: "user",
   },
   image: String,
-  about: String,
+  description: String,
 });
 
 userSchema.pre("save", function (next) {

@@ -8,11 +8,19 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_SECRET
 })
  
-const storage = new CloudinaryStorage({
+const storageUser = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'tindPet'
+    folder: 'tindPetUser'
+  },
+});
+
+const storagePet = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'tindPetPets'
   },
 });
  
-module.exports = multer({ storage: storage });
+module.exports.user = multer({ storage: storageUser });
+module.exports.pet = multer({ storage: storagePet });

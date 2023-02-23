@@ -1,0 +1,69 @@
+/* Pets */
+
+.pets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.pet {
+  position: relative;
+  width: 260px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pet .bgcolor {
+  background-color: rgba(0, 0, 0, 0.142);
+  width: 260px;
+  height: 300px;
+}
+
+.pet .text {
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  width: 100%;
+}
+
+.title_pet {
+  font-size: x-large;
+  color: aliceblue;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem 0;
+}
+
+.pet .text p,
+.pet .text a {
+  background-color: transparent;
+  color: aliceblue;
+  margin-block-end: 0;
+}
+
+.search-bar {
+  width: 1200px;
+  margin: 2rem auto;
+}
+
+.search {
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+}

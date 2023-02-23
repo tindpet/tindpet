@@ -1,0 +1,40 @@
+/* Detail Pets */
+.detail-pet {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  justify-items: center;
+}
+
+.detail-pet .info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.detail-pet .info h1 {
+  margin-bottom: 3rem;
+}
+
+.detail-pet .info h2 {
+  margin-bottom: 2rem;
+}
+
+.detail-pet .info p {
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  line-height: 1.7rem;
+}
+
+.detail-pet .info a {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 0.6rem 1.3rem;
+}
+
+.detail-pet img {
+  width: 300px;
+  border-radius: 5px;
+}

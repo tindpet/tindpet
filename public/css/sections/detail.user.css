@@ -1,0 +1,40 @@
+/* Detail User */
+.detail-user {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  justify-items: center;
+}
+
+.detail-user .info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.detail-user .info h1 {
+  margin-bottom: 3rem;
+}
+
+.detail-user .info h2 {
+  margin-bottom: 2rem;
+}
+
+.detail-user .info p {
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  line-height: 1.7rem;
+}
+
+.detail-user .info a {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 0.6rem 1.3rem;
+}
+
+.detail-user img {
+  width: 300px;
+  border-radius: 5px;
+}

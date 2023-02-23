@@ -2,229 +2,281 @@ module.exports = pets = [
   {
     name: "Nocciola",
     age: 1,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Nocciola.jpg'
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Nocciola_wtk5ur.jpg",
   },
   {
     name: "Kiwi",
     age: 1,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Kiwi.jpg'
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Kiwi_g0nmeu.jpg",
   },
   {
     name: "Bart y Lisa",
     age: 3,
-    specie: "Dog",
-    gender: "Male and female",
-    image: './images/Bart_lisa.jpg'
-  },{
+    specie: "dog",
+    gender: "male and female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Bart_lisa_axcudx.jpg",
+  },
+  {
     name: "Blackish",
     age: 5,
-    specie: "Cat",
-    gender: "Male",
-    image: './images/Blackish.jpg'
-  },{
+    specie: "cat",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Blackish_jde6sn.jpg",
+  },
+  {
     name: "Bob",
     age: 6,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Bob.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Bob_tm3faa.jpg",
+  },
+  {
     name: "Houston",
     age: 1,
-    specie: "Cat",
-    gender: "Male",
-    image: './images/Houston.jpg'
-  },{
+    specie: "cat",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Houston_epmjvp.jpg",
+  },
+  {
     name: "Kira",
     age: 4,
-    specie: "Dog",
-    gender: "Female",
-    image: './images/Kira.jpg'
+    specie: "dog",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Kira_cigjek.jpg",
   },
   {
     name: "Manila",
     age: 0,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Manila.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Manila_z0lrib.jpg",
+  },
+  {
     name: "Marisa",
     age: 2,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Marisa.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Marisa_akmkxl.webp",
+  },
+  {
     name: "Max",
     age: 3,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Max.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Max_kghcbf.jpg",
+  },
+  {
     name: "Mia",
     age: 4,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Mia.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Mia_tgrnhe.jpg",
+  },
+  {
     name: "Brenda",
     age: 0,
-    specie: "Dog",
-    gender: "Female",
-    image: './images/Brenda.jpg'
-  },{
+    specie: "dog",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Brenda_rxfigq.jpg",
+  },
+  {
     name: "Delhi",
     age: 1,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Delhi.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Delhi_qccuuj.jpg",
+  },
+  {
     name: "Rambo",
     age: 2,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Rambo.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rambo_rlpnc2.jpg",
+  },
+  {
     name: "Prisa",
     age: 6,
-    specie: "Dog",
-    gender: "Female",
-    image: './images/Prisa.jpg'
-  },{
+    specie: "dog",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Prisa_vgupp3.jpg",
+  },
+  {
     name: "Piña",
     age: 0,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Piña.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Pi%C3%B1a_ixhuhr.jpg",
+  },
+  {
     name: "Nube",
     age: 1,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Nube.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Nube_pkzuog.jpg",
+  },
+  {
     name: "Tokio",
     age: 0,
-    specie: "Cat",
-    gender: "Male",
-    image: './images/Tokio.jpg'
-  },{
+    specie: "cat",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Tokio_w38sta.jpg",
+  },
+  {
     name: "Vilma",
     age: 0,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Vilma.jpg'
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Vilma_r71u8w.jpg",
   },
   {
     name: "Pepo",
     age: 1,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Pepo.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Pepo_vcnomf.jpg",
+  },
+  {
     name: "Rabito",
     age: 2,
-    specie: "Rabbit",
-    gender: "Male",
-    image: './images/Rabito.jpg'
-  },{
+    specie: "rabbit",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rabito_zbrcis.jpg",
+  },
+  {
     name: "Rio",
     age: 0,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Rio.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rio_lv3mp1.jpg",
+  },
+  {
     name: "Rizo",
     age: 1,
     specie: "hedgehog",
-    gender: "Male",
-    image: './images/Rizo.jpg'
-  },{
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rizo_wnzlnu.jpg",
+  },
+  {
     name: "Ronald",
     age: 1,
-    specie: "Rabbit",
-    gender: "Male",
-    image: './images/Ronald.jpg'
-  },{
+    specie: "rabbit",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Ronald_i3szuq.jpg",
+  },
+  {
     name: "Salchipapo",
     age: 0,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Salchipapo.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Salchipapo_iajxla.jpg",
+  },
+  {
     name: "Tobi",
     age: 4,
-    specie: "Dog",
-    gender: "Male",
-    image: './images/Tobi.jpg'
-  },{
+    specie: "dog",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Tobi_t9eeka.jpg",
+  },
+  {
     name: "Xouba",
     age: 0,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Xouba.jpg'
-  },{
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Xouba_wre54s.jpg",
+  },
+  {
     name: "Xurel",
     age: 0,
-    specie: "Cat",
-    gender: "Male",
-    image: './images/Xurel.jpg'
+    specie: "cat",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Xurel_ybmxwr.jpg",
   },
   {
     name: "Leopoldina",
     age: 5,
-    specie: "Dog",
-    gender: "Female",
-    image: './images/Leopoldina.jpg'
-
+    specie: "dog",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Leopoldina_avd9ru.jpg",
   },
   {
     name: "Samuel",
     age: 4,
-    specie: "Cat",
-    gender: "Male",
-    image: './images/Samuel.jpg'
-
+    specie: "cat",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Samuel_bkgqrz.jpg",
   },
   {
     name: "Piucito",
     age: 9,
-    specie: "Cat",
-    gender: "Male",
-    image: './images/Piucito.jpg'
+    specie: "cat",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Piucito_tjjjp4.jpg",
   },
   {
     name: "Anacardo",
     age: 2,
-    specie: "Rabbit",
-    gender: "Male",
-    image: './images/Anacardo.jpg'
-
+    specie: "rabbit",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Anacardo_tdynot.jpg",
   },
   {
     name: "Roger",
     age: 6,
-    specie: "Parrot",
-    gender: "Male",
-    image: './images/Roger.jpg'
-
+    specie: "parrot",
+    gender: "male",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Roger_vjoztf.jpg",
   },
   {
     name: "Tundrita",
     age: 10,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Tundrita.jpg'
-
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Tundrita_d9wg4z.jpg",
   },
   {
-  name: "Puehr",
+    name: "Puehr",
     age: 11,
-    specie: "Cat",
-    gender: "Female",
-    image: './images/Pu_ehr.jpg'
-
+    specie: "cat",
+    gender: "female",
+    image:
+      "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Pu_ehr_hafui7.jpg",
   },
 ];

@@ -12,19 +12,23 @@ module.exports.home = (req, res) => {
 };
 
 module.exports.list = (req, res) => {
-  Pet.find()
+  const criteria = {};
+
+  if (req.query.search) {
+    criteria.specie = new RegExp(req.query.search);
+  }
+
+  Pet.find(criteria)
     .then((pets) => {
-      res.render("pages/pets", { pets });
+      res.render("pages/pets/pets", { pets, query: req.query });
     })
     .catch((error) => {
       console.log("error controller /pets");
     });
 };
 
-
-
 module.exports.createPet = (req, res) => {
-  res.render("pages/newpet");
+  res.render("pages/pets/newpet");
 };
 
 module.exports.doCreatePet = (req, res, next) => {
@@ -32,9 +36,33 @@ module.exports.doCreatePet = (req, res, next) => {
     req.body.image = req.file.path
   }
   
-  Pet.findOne({ email: req.body.email })
-    .then(
-        res.render("pages/newpet")
-        )
+  Pet.create(req.body)
+    .then((pet) => res.redirect(`/pets/${pet.id}`))
     .catch((error) => next(error));
+};
+
+module.exports.detail = (req, res, next) => {
+  Pet.findById(req.params.id)
+    .then((pet) => res.render("pages/pets/detail", { pet }))
+    .catch(next);
+};
+
+module.exports.update = (req, res, next) => {
+  Pet.findById(req.params.id)
+    .then((pet) => {
+      res.render("pages/pets/update", { pet });
+    })
+    .catch(next);
+};
+
+module.exports.doUpdate = (req, res, next) => {
+  if (req.file) {
+    req.body.image = req.file.path;
+  }
+  console.log(req.body);
+  Pet.findByIdAndUpdate(req.params.id, req.body, { runValidators: true })
+    .then(() => {
+      res.redirect(`/pets/${req.params.id}`);
+  })
+  .catch(err => console.log(err))
 };
