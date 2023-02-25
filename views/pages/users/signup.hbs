@@ -9,7 +9,7 @@
       <div class="form-section">
         <label for="image">We would like you to have a photo so we can meet you</label>
         <input
-          id="#input-photo"
+          id="image"
           type="file"
           accept="image"
           name="image"
@@ -17,33 +17,33 @@
         />
       </div>
       <div class="form-section">
-        <label for="about">Tell us something about yourself and why are you
+        <label for="description">Tell us something about yourself and why are you
           joining us?</label>
-        <textarea name="description" cols="30" rows="10"></textarea>
+        <textarea name="description" cols="30" rows="10" id="description"></textarea>
       </div>
     </div>
 
     <div class="info">
       <div class="form-section">
         <label for="name">What's your name?</label>
-        <input type="text" name="name" />
+        <input type="text" name="name" id="name"/>
       </div>
       <div class="form-section">
         <label for="lastname">And your last name?</label>
-        <input type="text" name="lastname" />
+        <input type="text" name="lastname" id="lastname"/>
       </div>
       <div class="form-section">
         <label for="email">Could you give us an email so that you can log in and
           contact you too?</label>
-        <input type="email" name="email" />
+        <input type="email" name="email" id="email"/>
       </div>
       <div class="form-section">
         <label for="password">Now a password so you can log in</label>
-        <input type="password" name="password" />
+        <input type="password" name="password" id="password"/>
       </div>
       <div class="form-section">
         <label for="role">How do we identify you?</label>
-        <select name="role">
+        <select name="role" id="role">
           <option value="user">I'm an adopter</option>
           <option value="protector">I'm a protector</option>
         </select>

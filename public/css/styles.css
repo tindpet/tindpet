@@ -1,12 +1,13 @@
 @import url("./sections/forms.css");
 @import url("./sections/pets.css");
 @import url("./sections/detail.user.css");
+@import url("./sections/newpet.css");
 @import url("./sections/detail.pet.css");
 
 * {
   box-sizing: border-box;
-  background-color: rgb(236, 235, 235);
-  color: darkslateblue;
+  background-color: f0e6ef;
+  color: 0d1b2af;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1;
@@ -17,12 +18,18 @@
 
 /* home */
 
+.container {
+  padding: 110px 0px 30px 0;
+}
+
 .jumbo {
-  text-align: center;
-  margin-bottom: 3rem;
+  text-align: center; 
+  font-size:x-large;
+  margin: 3rem;
+  margin-top: -10px;
 }
 .slogan {
-  padding: 20px 0px;
+  padding: 20px 0px 50px 0px;
   font-weight: 900;
   font-size: 2rem;
 }
@@ -31,9 +38,14 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-image: url("../images/navbar.jpg");
+  background-color: 9c89b8;
   align-items: center;
   font-size: larger;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
 }
 
 .logo {

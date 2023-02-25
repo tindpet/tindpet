@@ -1,29 +1,40 @@
 <div class="form-container">
-  <h1>If you want to add a new member of your protector, we need some information before!</h1>
+  <h1>Add a new friend</h1>
 
   <form action="/pets/newpet" method="POST" enctype="multipart/form-data">
     <div class="image">
       <div class="preview">
-        <img id="pet-img-preview" src="https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/img-pet-preview_zi4zwq.jpg" />
+        <img id="pet-img-preview" src="https://res.cloudinary.com/davpqpwqc/image/upload/v1677317283/tindPetPets/newpetPreview_ps5gv9.png" />
       </div>
       <div class="form-section">
         <label for="image">We need a photo for getting to know your animal!</label>
         <input
-          id="#input-photo-pet"
+          id="input-photo-pet"
           type="file"
           accept="image"
           name="image"
           onchange="previewImage(event, '#pet-img-preview')"
         />
       </div>
-      name<input type="text" name="name">
-      age<input type="number" name="age">
-      specie<input type="text" name="specie">
-      gender<input type="text" name="gender">
+      <input type="text" hidden value="" name="protectorId"/>
+      <button type="submit" class="btn-create">Create</button>
+     
     </div>
       <div class="form-section">
-        <label for="about">How is he/she? What specie is, what is his/her charaacter...</label>
-        <textarea name="about" cols="30" rows="10"></textarea>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"/>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age"/>
+
+        <label for="specie">Specie</label>
+        <input type="text" name="specie" id="specie"/>
+
+        <label for="gender">Gender</label>
+        <input type="text" name="gender" id="gender"/>
+
+
+      <label for="description">How is he/she? What specie is, what is his/her character...</label>
+        <textarea name="description" cols="30" rows="10" id="description"></textarea>
       </div>
 
-      <button type="submit">Create</button>
