@@ -1,3 +1,6 @@
+const silvia = "63fa66c0a456fdf3f20b254d";
+const leandro = "63f7bece33cc5e36ed9d85f1";
+
 module.exports = pets = [
   {
     name: "Nocciola",
@@ -6,6 +9,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Nocciola_wtk5ur.jpg",
+    protectorId: silvia,
   },
   {
     name: "Kiwi",
@@ -14,6 +18,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Kiwi_g0nmeu.jpg",
+    protectorId: silvia,
   },
   {
     name: "Bart y Lisa",
@@ -22,6 +27,7 @@ module.exports = pets = [
     gender: "male and female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Bart_lisa_axcudx.jpg",
+    protectorId: silvia,
   },
   {
     name: "Blackish",
@@ -30,6 +36,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Blackish_jde6sn.jpg",
+    protectorId: silvia,
   },
   {
     name: "Bob",
@@ -38,6 +45,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Bob_tm3faa.jpg",
+    protectorId: silvia,
   },
   {
     name: "Houston",
@@ -46,6 +54,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Houston_epmjvp.jpg",
+    protectorId: silvia,
   },
   {
     name: "Kira",
@@ -54,6 +63,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Kira_cigjek.jpg",
+    protectorId: silvia,
   },
   {
     name: "Manila",
@@ -62,6 +72,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Manila_z0lrib.jpg",
+    protectorId: silvia,
   },
   {
     name: "Marisa",
@@ -70,6 +81,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Marisa_akmkxl.webp",
+    protectorId: silvia,
   },
   {
     name: "Max",
@@ -78,6 +90,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Max_kghcbf.jpg",
+    protectorId: silvia,
   },
   {
     name: "Mia",
@@ -86,6 +99,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Mia_tgrnhe.jpg",
+    protectorId: silvia,
   },
   {
     name: "Brenda",
@@ -94,6 +108,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Brenda_rxfigq.jpg",
+    protectorId: silvia,
   },
   {
     name: "Delhi",
@@ -102,6 +117,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Delhi_qccuuj.jpg",
+    protectorId: silvia,
   },
   {
     name: "Rambo",
@@ -110,6 +126,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rambo_rlpnc2.jpg",
+    protectorId: silvia,
   },
   {
     name: "Prisa",
@@ -118,6 +135,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Prisa_vgupp3.jpg",
+    protectorId: silvia,
   },
   {
     name: "Piña",
@@ -126,6 +144,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Pi%C3%B1a_ixhuhr.jpg",
+    protectorId: silvia,
   },
   {
     name: "Nube",
@@ -134,6 +153,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Nube_pkzuog.jpg",
+    protectorId: silvia,
   },
   {
     name: "Tokio",
@@ -142,6 +162,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Tokio_w38sta.jpg",
+    protectorId: silvia,
   },
   {
     name: "Vilma",
@@ -150,6 +171,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Vilma_r71u8w.jpg",
+    protectorId: leandro,
   },
   {
     name: "Pepo",
@@ -158,6 +180,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Pepo_vcnomf.jpg",
+    protectorId: leandro,
   },
   {
     name: "Rabito",
@@ -166,6 +189,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rabito_zbrcis.jpg",
+    protectorId: leandro,
   },
   {
     name: "Rio",
@@ -174,6 +198,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rio_lv3mp1.jpg",
+    protectorId: leandro,
   },
   {
     name: "Rizo",
@@ -182,6 +207,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Rizo_wnzlnu.jpg",
+    protectorId: leandro,
   },
   {
     name: "Ronald",
@@ -190,6 +216,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Ronald_i3szuq.jpg",
+    protectorId: leandro,
   },
   {
     name: "Salchipapo",
@@ -198,6 +225,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Salchipapo_iajxla.jpg",
+    protectorId: leandro,
   },
   {
     name: "Tobi",
@@ -206,6 +234,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Tobi_t9eeka.jpg",
+    protectorId: leandro,
   },
   {
     name: "Xouba",
@@ -214,6 +243,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Xouba_wre54s.jpg",
+    protectorId: leandro,
   },
   {
     name: "Xurel",
@@ -222,6 +252,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Xurel_ybmxwr.jpg",
+    protectorId: leandro,
   },
   {
     name: "Leopoldina",
@@ -230,6 +261,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181455/tindPetPets/Leopoldina_avd9ru.jpg",
+    protectorId: leandro,
   },
   {
     name: "Samuel",
@@ -238,6 +270,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Samuel_bkgqrz.jpg",
+    protectorId: leandro,
   },
   {
     name: "Piucito",
@@ -246,6 +279,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181456/tindPetPets/Piucito_tjjjp4.jpg",
+    protectorId: leandro,
   },
   {
     name: "Anacardo",
@@ -254,6 +288,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Anacardo_tdynot.jpg",
+    protectorId: leandro,
   },
   {
     name: "Roger",
@@ -262,6 +297,7 @@ module.exports = pets = [
     gender: "male",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Roger_vjoztf.jpg",
+    protectorId: leandro,
   },
   {
     name: "Tundrita",
@@ -270,6 +306,7 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181454/tindPetPets/Tundrita_d9wg4z.jpg",
+    protectorId: leandro,
   },
   {
     name: "Puehr",
@@ -278,5 +315,6 @@ module.exports = pets = [
     gender: "female",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677181457/tindPetPets/Pu_ehr_hafui7.jpg",
+    protectorId: leandro,
   },
 ];

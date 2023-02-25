@@ -36,7 +36,10 @@ module.exports.doCreatePet = (req, res, next) => {
     req.body.image = req.file.path
   }
   
-  Pet.create(req.body)
+  const newPet = req.body
+  newPet.protectorId = req.user.id
+
+  Pet.create(newPet)
     .then((pet) => res.redirect(`/pets/${pet.id}`))
     .catch((error) => next(error));
 };

@@ -8,7 +8,7 @@ const petSchema = new Schema({
   gender: String,
   image: String,
   description: String,
-  protectorId: String
+  protectorId: { type: Schema.Types.ObjectId, ref: "User" },
 });
 
 module.exports = mongoose.model("Pet", petSchema);

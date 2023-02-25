@@ -1,4 +1,5 @@
 const UserModel = require("../models/user.model");
+const Pet = require("../models/pets.model");
 const bcrypt = require("bcryptjs");
 
 module.exports.create = (req, res) => {
@@ -15,8 +16,7 @@ module.exports.doCreate = (req, res, next) => {
       if (user) {
         res.render("pages/users/signup");
       } else {
-        return UserModel.create(req.body)
-          .then(() => res.redirect("/login"));
+        return UserModel.create(req.body).then(() => res.redirect("/login"));
       }
     })
     .catch((error) => next(error));
@@ -33,7 +33,7 @@ module.exports.doLogin = (req, res, next) => {
         .compare(req.body.password, user.password)
         .then((isAuthenticated) => {
           if (isAuthenticated) {
-            // req.session.userId = user.id;
+            req.session.userId = user.id;
             res.redirect("/pets");
           }
         });
@@ -43,7 +43,12 @@ module.exports.doLogin = (req, res, next) => {
 
 module.exports.detail = (req, res, next) => {
   UserModel.findById(req.params.id)
-    .then((user) => res.render("pages/users/detail", { user }))
+    .then((user) => {
+      return Pet.find({ protectorId: req.params.id })
+        .then((pets) =>
+          res.render("pages/users/detail", { user, pets })
+      );
+    })
     .catch(next);
 };
 
@@ -62,6 +67,6 @@ module.exports.doUpdate = (req, res, next) => {
   UserModel.findByIdAndUpdate(req.params.id, req.body, { runValidators: true })
     .then(() => {
       res.redirect(`/user/${req.params.id}`);
-  })
-  .catch(err => console.log(err))
+    })
+    .catch((err) => console.log(err));
 };
