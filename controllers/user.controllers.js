@@ -29,6 +29,7 @@ module.exports.login = (req, res) => {
 module.exports.doLogin = (req, res, next) => {
   UserModel.findOne({ email: req.body.email })
     .then((user) => {
+       console.log('login')
       return bcrypt
         .compare(req.body.password, user.password)
         .then((isAuthenticated) => {
@@ -36,9 +37,10 @@ module.exports.doLogin = (req, res, next) => {
             req.session.userId = user.id;
             res.redirect("/pets");
           }
+          return res.sendStatus(401)
         });
     })
-    .catch(next);
+    .catch(err => console.error(err));
 };
 
 module.exports.detail = (req, res, next) => {
@@ -70,3 +72,8 @@ module.exports.doUpdate = (req, res, next) => {
     })
     .catch((err) => console.log(err));
 };
+
+module.exports.logOut = (req, res, next) => {
+  req.session.destroy()
+  res.redirect('/')
+}

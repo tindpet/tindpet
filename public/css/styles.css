@@ -37,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: 9c89b8;
+  background-color: #9c89b8;
   align-items: center;
   font-size: larger;
   position: fixed;
@@ -45,6 +45,11 @@
   right: 0;
   left: 0;
   z-index: 3;
+}
+
+a.userProfile {
+  background-color: none;
+  background: transparent;
 }
 
 .logo {
@@ -55,4 +60,11 @@
 .navbar_text {
   background-color: none;
   background: transparent;
+  color: white;
+}
+
+.navbar .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }

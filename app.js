@@ -1,16 +1,17 @@
+const { setupHandlebars } = require("./config/hbs.config");
 require("dotenv").config();
 require("./config/db.config");
 
 const express = require("express");
 const app = express();
 
+setupHandlebars(app)
+
+
 const logger = require("morgan");
 const routesUser = require("./config/user.config");
 const routesPets = require("./config/pets.config");
 const { session, loadSessionUser } = require("./config/session.config");
-
-app.set("view engine", "hbs");
-app.set("views", `${__dirname}/views`);
 
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: false }));

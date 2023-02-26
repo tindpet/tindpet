@@ -1,5 +1,6 @@
 const Pet = require("../models/pets.model");
 
+
 module.exports.home = (req, res) => {
   Pet.find()
   .limit(8)
