@@ -2,6 +2,7 @@
 @import url("./sections/pets.css");
 @import url("./sections/detail.user.css");
 @import url("./sections/detail.pet.css");
+@import url("./sections/menu.css");
 
 * {
   box-sizing: border-box;
@@ -22,8 +23,8 @@
 }
 
 .jumbo {
-  text-align: center; 
-  font-size:x-large;
+  text-align: center;
+  font-size: x-large;
   margin: 3rem;
   margin-top: -10px;
 }
@@ -31,40 +32,4 @@
   padding: 20px 0px 50px 0px;
   font-weight: 900;
   font-size: 2rem;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #9c89b8;
-  align-items: center;
-  font-size: larger;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 3;
-}
-
-a.userProfile {
-  background-color: none;
-  background: transparent;
-}
-
-.logo {
-  height: 65px;
-  width: 85px;
-}
-
-.navbar_text {
-  background-color: none;
-  background: transparent;
-  color: white;
-}
-
-.navbar .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }

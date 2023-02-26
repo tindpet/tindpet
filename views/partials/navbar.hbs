@@ -1,16 +1,23 @@
 <nav>
-      <div class="navbar">
-          <a class="navbar_text" href="/">
-            <img class="logo" src="/images/logo.png" />
-          </a>
-          <a class="navbar_text" href="/pets">PETS</a>
-          <a class="navbar_text" href="/login">Login</a>
-          <a class="navbar_text" href="/signup">Sign Up</a>
-          <a class="navbar_text">Contact</a>
-          <a class="navbar_text">Ordinary questions</a>
-          <a class="navbar_text">About us</a>
-            {{#if currentUser}}
-           <a class="userProfile" href="/user/{{currentUser._id}}"><img class='avatar' src='{{currentUser.image}}'/></a>
-            {{/if}} 
+  <div class="navbar">
+    <a class="navbar_text" href="/">
+      <img class="logo" src="/images/logo.png" />
+    </a>
+    <a class="navbar_text" href="/pets">PETS</a>
+    <a class="navbar_text" href="/login">Login</a>
+    <a class="navbar_text" href="/signup">Sign Up</a>
+    <a class="navbar_text">Contact</a>
+    <a class="navbar_text">Ordinary questions</a>
+    <a class="navbar_text">About us</a>
+    {{#if currentUser}}
+      <div class="submenu-container">
+        <img class="avatar" src="{{currentUser.image}}" />
+        <div class="submenu">
+          <a class="userProfile" href="/user/{{currentUser._id}}">Profile</a>
+          <a class="userProfile" href="/user/{{currentUser._id}}/update">Edit Profile</a>
+          <a class="userProfile" href="/logout">Log out</a>
+        </div>
       </div>
-    </nav>
+    {{/if}}
+  </div>
+</nav>
