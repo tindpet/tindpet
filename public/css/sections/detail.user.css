@@ -27,24 +27,6 @@
   line-height: 1.7rem;
 }
 
-.detail-user .info a {
-  font-size: 1.5rem;
-  border-radius: 5px;
-  border: 2px solid black;
-  padding: 0.6rem 1.3rem;
-  color:aliceblue;
-  
-}
-
-.detail-user .info .btn-editprofile {
-  background-color: #dda15e;
-}
-
-.detail-user .info .btn-addpet {
-  background-color: #606c38;
-}
-
-
 .detail-user img {
   width: 300px;
   border-radius: 5px;

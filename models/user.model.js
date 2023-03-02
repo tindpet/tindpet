@@ -13,8 +13,8 @@ const userSchema = new Schema({
   password: String,
   role: {
     type: String,
-    enum: ["admin", "user", "protector"],
-    default: "user",
+    enum: ["admin", "adopter", "protector"],
+    default: "adopter",
   },
   image: String,
   description: String,

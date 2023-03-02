@@ -1,23 +1,32 @@
 <nav>
   <div class="navbar">
-    <a class="navbar_text" href="/">
-      <img class="logo" src="/images/logo.png" />
-    </a>
-    <a class="navbar_text" href="/pets">PETS</a>
-    <a class="navbar_text" href="/login">Login</a>
-    <a class="navbar_text" href="/signup">Sign Up</a>
-    <a class="navbar_text">Contact</a>
-    <a class="navbar_text">Ordinary questions</a>
-    <a class="navbar_text">About us</a>
-    {{#if currentUser}}
-      <div class="submenu-container">
-        <img class="avatar" src="{{currentUser.image}}" />
-        <div class="submenu">
-          <a class="userProfile" href="/user/{{currentUser._id}}">Profile</a>
-          <a class="userProfile" href="/user/{{currentUser._id}}/update">Edit Profile</a>
-          <a class="userProfile" href="/logout">Log out</a>
-        </div>
+    <div class="transparent"></div>
+    <div class="menu">
+      <div class="links">
+        <a class="navbar_text" href="/">Home</a>
+        <a class="navbar_text" href="/pets">Pets</a>
+        <a class="navbar_text">Contact</a>
+        <a class="navbar_text">Ordinary questions</a>
+        <a class="navbar_text">About us</a>
+        {{#if noSession}}
+          <a class="navbar_text" href="/login">Login</a>
+          <a class="navbar_text" href="/signup">Sign Up</a>
+        {{/if}}
+      {{#if currentUser}}
       </div>
-    {{/if}}
+        <div class="submenu-container">
+          <img class="avatar" src="{{currentUser.image}}" />
+          <div class="submenu">
+            <a class="userProfile" href="/user/{{currentUser.id}}">Profile</a>
+            <a class="userProfile" href="/user/{{currentUser.id}}/update">Edit
+              Profile</a>
+            {{#if userProtector}}
+              <a class="userProfile" href="/pets/newpet">Add new pet</a>
+            {{/if}}
+            <a class="userProfile" href="/logout">Log out</a>
+          </div>
+        </div>
+      {{/if}}
+    </div>
   </div>
 </nav>

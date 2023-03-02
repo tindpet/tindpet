@@ -5,8 +5,10 @@
 
 .form-container h1 {
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  font-size: 8rem;
+  font-weight: 100;
+  font-family: myFirstFont;
 }
 
 .form-container form {
@@ -56,10 +58,10 @@
 }
 
 .form-container .form-section textarea {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
+}
 
-.form-container .form-section button, 
+.form-container .form-section button,
 .form-container .image button {
   height: 3rem;
   width: 10rem;

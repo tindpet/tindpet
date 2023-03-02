@@ -1,0 +1,20 @@
+<div class="pets">
+  {{#each pets as |pet|}}
+    <div class="pet" style="background-image:url('{{pet.image}}')">
+      <div class="bgcolor">
+      </div>
+      <div class="text">
+        <p class="title_pet">{{pet.name}}, {{pet.age}}</p>
+        <div class="detail">
+          <a href="/pets/{{pet.id}}">Detail</a>
+
+          <button
+            onclick="like(event, '{{pet.id}}')"
+            type="submit"
+          >Favorito</button>
+          TENGO {{pet.likes.length}} LIKES
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

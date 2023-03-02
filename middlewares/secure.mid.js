@@ -6,8 +6,8 @@ module.exports.isAuthenticated = (req, res, next) => {
   }
 };
 
-module.exports.isAdmin = (req, res, next) => {
-  if (req.user && req.user.role === "admin") {
+module.exports.isProtector = (req, res, next) => {
+  if (req.user && req.user.role === "protector") {
     next();
   } else {
     res.redirect("/login");

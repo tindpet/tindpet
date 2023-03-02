@@ -20,11 +20,15 @@ module.exports.session = session({
 
 module.exports.loadSessionUser = (req, res, next) => {
   const { userId } = req.session;
+
+  res.locals.noSession = userId === undefined;
+
   if (userId) {
     User.findById(userId)
       .then((user) => {
         req.user = user;
         res.locals.currentUser = user;
+        res.locals.userProtector = user.role === "protector";
         next();
       })
       .catch((error) => next(error));

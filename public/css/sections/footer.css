@@ -1,0 +1,44 @@
+.footer {
+  padding: 2rem 0 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("/images/footer.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.footer .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 3rem;
+  padding-bottom: .2rem;
+  background-color: transparent;
+}
+
+.footer .info .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: transparent;
+  color: aliceblue;
+}
+
+.footer .info .text h2,
+  .footer .info .text p {
+  background-color: transparent;
+}
+
+.footer .info .text h2 {
+  font-size: 1.2rem;
+}
+
+.footer .info .text p {
+  font-size: 1rem;
+}

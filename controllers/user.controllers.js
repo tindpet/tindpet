@@ -1,15 +1,11 @@
 const UserModel = require("../models/user.model");
-const Pet = require("../models/pets.model");
+const Like = require("../models/likes.model");
 const bcrypt = require("bcryptjs");
 
-module.exports.create = (req, res) => {
-  res.render("pages/users/signup");
-};
+module.exports.create = (req, res) => res.render("pages/users/signup");
 
 module.exports.doCreate = (req, res, next) => {
-  if (req.file) {
-    req.body.image = req.file.path;
-  }
+  if (req.file) req.body.image = req.file.path;
 
   UserModel.findOne({ email: req.body.email })
     .then((user) => {
@@ -29,7 +25,7 @@ module.exports.login = (req, res) => {
 module.exports.doLogin = (req, res, next) => {
   UserModel.findOne({ email: req.body.email })
     .then((user) => {
-       console.log('login')
+      console.log("login");
       return bcrypt
         .compare(req.body.password, user.password)
         .then((isAuthenticated) => {
@@ -37,43 +33,51 @@ module.exports.doLogin = (req, res, next) => {
             req.session.userId = user.id;
             res.redirect("/pets");
           }
-          return res.sendStatus(401)
+          return res.sendStatus(401);
         });
     })
-    .catch(err => console.error(err));
+    .catch((err) => console.error(err));
 };
 
 module.exports.detail = (req, res, next) => {
-  UserModel.findById(req.params.id)
+  UserModel.findById(req.user.id)
     .then((user) => {
-      return Pet.find({ protectorId: req.params.id })
-        .then((pets) =>
-          res.render("pages/users/detail", { user, pets })
-      );
+      if (req.user.role === "adopter") {
+        return Like.find({ user: user })
+          .populate("pet")
+          .then((likes) => {
+            if (likes) {
+              const pets = [];
+
+              likes.forEach((like) => {
+                pets.push(like.pet);
+              });
+
+              res.render("pages/users/detail", { user, pets: pets });
+            }
+          });
+      } else {
+        return res.render("pages/users/detail", { user });
+      }
     })
     .catch(next);
 };
 
 module.exports.update = (req, res, next) => {
   UserModel.findById(req.params.id)
-    .then((user) => {
-      res.render("pages/users/update", { user });
-    })
+    .then((user) => res.render("pages/users/update", { user }))
     .catch(next);
 };
 
 module.exports.doUpdate = (req, res, next) => {
-  if (req.file) {
-    req.body.image = req.file.path;
-  }
+  if (req.file) req.body.image = req.file.path;
+
   UserModel.findByIdAndUpdate(req.params.id, req.body, { runValidators: true })
-    .then(() => {
-      res.redirect(`/user/${req.params.id}`);
-    })
+    .then(() => res.redirect(`/user/${req.params.id}`))
     .catch((err) => console.log(err));
 };
 
 module.exports.logOut = (req, res, next) => {
-  req.session.destroy()
-  res.redirect('/')
-}
+  req.session.destroy();
+  res.redirect("/");
+};

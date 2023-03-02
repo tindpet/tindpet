@@ -1,4 +1,4 @@
-const dataBase = require("../config/db.config");
+require("../config/db.config");
 const petModel = require("../models/pets.model");
 const pets = require("./pets");
 

@@ -10,17 +10,4 @@
   </form>
 </div>
 
-<div class="pets">
-  {{#each pets as |pet|}}
-    <div class="pet" style="background-image:url('{{pet.image}}')">
-      <div class="bgcolor">
-      </div>
-      <div class="text">
-        <p class="title_pet">{{pet.name}}, {{pet.age}}</p>
-        <div class="detail">
-          <a href="/pets/{{pet.id}}">Detail</a>
-        </div>
-      </div>
-    </div>
-  {{/each}}
-</div>
+{{> petcard}}
