@@ -5,7 +5,7 @@ let state = false;
 avatar.addEventListener("click", () => {
 
   if (!state) {
-    submenuBtn.style.left = -70 + "px";
+    submenuBtn.style.left = -100 + "px";
     state = true;
   } else {
     submenuBtn.style.left = 190 + "px";

@@ -10,6 +10,7 @@
   background-size: cover;
   display: grid;
   grid-template-columns: 70% 30%;
+  min-height: 6rem;
 }
 
 .footer .info {
@@ -36,6 +37,7 @@
 }
 
 .footer .info .text h2 {
+  margin-top: 0.5rem;
   font-size: 1.2rem;
 }
 

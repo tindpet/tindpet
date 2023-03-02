@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: myFirstFont;
-  src: url("../../fonts/Thesignature.ttf");
+  src: url("/fonts/Thesignature.ttf");
 }
 
 * {
@@ -45,9 +45,7 @@ body {
 }
 
 .slogan {
-  font-family: myFirstFont;
   padding: 20px 0px 50px 0px;
-  font-weight: 100;
-  font-size: 8rem;
-  line-height: 5rem;
+  font-weight: 700;
+  font-size: 5rem;
 }

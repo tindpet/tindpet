@@ -6,7 +6,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 3;
+  z-index: 10;
   background-image: url("/images/menu.svg");
   background-repeat: no-repeat;
   background-position: left;
@@ -68,12 +68,14 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: #9c89b8;
+  background-color: #97b798;
   position: absolute;
   width: 190px;
   padding: 2rem 0;
   left: 190px;
   transition: ease-in 0.5s;
+  z-index: -10;
+  border-radius: 5px;
 }
 
 .submenu a {
