@@ -11,6 +11,8 @@ setupHandlebars(app)
 const logger = require("morgan");
 const routesUser = require("./config/user.config");
 const routesPets = require("./config/pets.config");
+const routesMessage = require("./config/message.config");
+
 const { session, loadSessionUser } = require("./config/session.config");
 
 app.use(logger("dev"));
@@ -27,6 +29,8 @@ app.use((req, res, next) => {
 
 app.use("/", routesUser);
 app.use("/", routesPets);
+app.use("/", routesMessage);
+
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

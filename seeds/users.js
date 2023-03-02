@@ -1,3 +1,5 @@
+
+
 module.exports = pets = [
   {
     name: "Leandro",
@@ -14,7 +16,7 @@ module.exports = pets = [
     lastname: "Edreira",
     email: "silvia@silvia.com",
     password: 123,
-    role: "admin",
+    role: "protector",
     image:
       "https://res.cloudinary.com/davpqpwqc/image/upload/v1677412363/tindPetUser/r2nyk1aw88xuheu8g71e.jpg",
     description: "bla bla bla",

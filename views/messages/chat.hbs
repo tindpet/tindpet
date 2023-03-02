@@ -1,0 +1,18 @@
+<div class="chat">
+    <ul>
+        {{#each messages as |message|}}
+            <li> 
+                from: {{message.from.name}}
+                to:  {{message.to.name}}
+                message: {{message.message}} 
+                </li>
+        {{/each}}
+    </ul>
+
+    <form action="/pets/{{to}}/chat" method="POST">
+        <label name="message" id="message" type="text"></label>
+        <input value="{{message.message}}" name="message" class="form-control" type="text" id="message">
+        <br>
+        <button type="submit" id="submit" class="btn-message">SEND</button>
+    </form>
+</div>
