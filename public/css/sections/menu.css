@@ -13,6 +13,7 @@
   background-size: cover;
   min-height: 10rem;
   background-color: transparent;
+  width: 100%;
 }
 
 .navbar .transparent {

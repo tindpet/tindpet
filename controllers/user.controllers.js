@@ -1,5 +1,6 @@
 const UserModel = require("../models/user.model");
 const Like = require("../models/likes.model");
+const Pets = require("../models/pets.model");
 const bcrypt = require("bcryptjs");
 
 module.exports.create = (req, res) => res.render("pages/users/signup");
@@ -50,6 +51,9 @@ module.exports.detail = (req, res, next) => {
               const pets = [];
 
               likes.forEach((like) => {
+                like.pet.like = true;
+                like.pet.button = true;
+
                 pets.push(like.pet);
               });
 
@@ -57,7 +61,10 @@ module.exports.detail = (req, res, next) => {
             }
           });
       } else {
-        return res.render("pages/users/detail", { user });
+        Pets.find({ protectorId: req.user.id })
+          .then((pets) => {
+            return res.render("pages/users/detail", { user, pets });
+        });
       }
     })
     .catch(next);

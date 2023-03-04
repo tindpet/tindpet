@@ -10,5 +10,4 @@ mongoose
   })
   .catch((error) => console.log(`Error on DB: ${error}`));
 
-
-module.exports = mongoose
+module.exports = mongoose;

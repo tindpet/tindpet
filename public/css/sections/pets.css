@@ -23,38 +23,71 @@
 
 .pet .bgcolor {
   background-color: rgba(0, 0, 0, 0.142);
+  position: absolute;
   width: 260px;
   height: 300px;
+  top: 0;
+  left: 0;
 }
 
 .pet .text {
-  position: absolute;
-  bottom: 0;
   background: transparent;
   width: 100%;
+  display: grid;
+  grid-template-rows: 70% 20% 10%;
+  height: 100%;
 }
 
-.title_pet {
+#Capa_1 {
+  width: 3rem;
+}
+
+.pet .likes .cls-1 {
+  fill: #fed7d9;
+}
+
+.pet .likes .cls-2 {
+  fill: #baa496;
+}
+
+.pet .likes .cls-3 {
+  fill: #b50009;
+}
+
+.pet .likes .cls-4 {
+  fill: #baa496;
+}
+
+.pet .likes {
+  justify-self: flex-end;
+  padding: 0.5rem 0.5rem 0 0;
+}
+
+.pet .likes button {
+  background-color: transparent;
+  border: none;
+  transition: ease-in 0.2s;
+}
+
+.pet .likes button:hover {
+  transform: scale(1.2);
+}
+
+.pet .name {
+  justify-self: flex-start;
+  align-self: center;
   font-size: x-large;
   color: aliceblue;
   font-weight: 500;
   margin-left: 1rem;
 }
 
-.detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  padding: 1rem 0;
+.pet .detail {
+  justify-self: center;
 }
 
-.pet .text p,
 .pet .text a {
-  background-color: transparent;
   color: aliceblue;
-  margin-block-end: 0;
 }
 
 .search-bar {

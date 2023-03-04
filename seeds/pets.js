@@ -1,5 +1,5 @@
-const leandro = '6400f153b17779d7c47fdeee';
-const silvia = '6400f153b17779d7c47fdeec';
+const leandro = '640258ef06fe356ddb9bd209';
+const silvia = '640258ef06fe356ddb9bd207';
 
 module.exports = pets = [
   {

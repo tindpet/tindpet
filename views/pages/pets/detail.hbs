@@ -6,8 +6,9 @@
     <h1>Hi! my name is {{pet.name}}</h1>
     <h2>I am {{pet.age}} years old and I am a {{pet.gender}} {{pet.specie}}</h2>
     <p>{{pet.description}}</p>
-    <a href="/pets/{{pet.id}}/update">Edit profile</a>
+    {{#if userProtector}}
+      <a href="/pets/{{pet.id}}/update">Edit profile</a>
+    {{/if}}
     <a href="/pets/{{pet.id}}/chat">Chat</a>
-  
   </div>
 </div>

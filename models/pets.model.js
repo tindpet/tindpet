@@ -11,11 +11,11 @@ const petSchema = new Schema({
   protectorId: { type: Schema.Types.ObjectId, ref: "User" },
 });
 
-petSchema.virtual('likes', {
-  ref: 'Like',
-  localField: '_id',
-  foreignField: 'pet',
-  justOne: false
-})
+petSchema.virtual("likes", {
+  ref: "Like",
+  localField: "_id",
+  foreignField: "pet",
+  justOne: false,
+});
 
 module.exports = mongoose.model("Pet", petSchema);

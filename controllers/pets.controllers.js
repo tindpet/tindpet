@@ -15,15 +15,46 @@ module.exports.list = (req, res) => {
 
   if (req.query.search) {
     let lowerCaseSearch = req.query.search.toLowerCase();
-
     criteria.specie = new RegExp(lowerCaseSearch);
   }
 
   Pet.find(criteria)
     .populate("likes")
-    .then((pets) => res.render("pages/pets/pets", { pets, query: req.query }))
+    .then((pets) => {
+      if (req.user.role === "adopter") {
+        const newPets = JSON.parse(JSON.stringify(pets));
+
+        newPets.map((pet) => {
+          pet.button = true;
+          return pet;
+        });
+
+        return Like.find({ user: req.user })
+          .populate("pet")
+          .then((likes) => {
+            if (likes) {
+              likes.forEach((like) => {
+                newPets.map((pet) => {
+                  if (pet._id === like.pet.id) {
+                    pet.like = true;
+                  }
+                  return pet;
+                });
+              });
+            }
+            res.render("pages/pets/pets", {
+              pets: newPets,
+              query: req.query,
+            });
+          });
+      }
+      return res.render("pages/pets/pets", {
+        pets,
+        query: req.query,
+      });
+    })
     .catch((error) => {
-      console.log("error controller /pets");
+      console.log("error controller /pets: " + error);
     });
 };
 

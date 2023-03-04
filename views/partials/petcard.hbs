@@ -1,18 +1,29 @@
 <div class="pets">
-  {{#each pets as |pet|}}
+  {{#each pets as |pet|}}  
     <div class="pet" style="background-image:url('{{pet.image}}')">
       <div class="bgcolor">
-      </div>
-      <div class="text">
-        <p class="title_pet">{{pet.name}}, {{pet.age}}</p>
-        <div class="detail">
-          <a href="/pets/{{pet.id}}">Detail</a>
+        <div class="text">
+          <div class="likes">
+            {{#if pet.button}}
+              <button id="btn-like-{{pet._id}}" onclick="like(event, '{{pet._id}}')">
+                {{#if pet.like}}
+                  {{> likes.svg colorHeart='cls-3' colorDog='cls-4'}}    
+                {{else}}    
+                  {{> likes.svg colorHeart='cls-1' colorDog='cls-2'}}
+                {{/if}}            
+              </button>
+            {{/if}}            
+          </div>
+          <div class="name">
+            <p class="title_pet">{{pet.name}}, {{pet.age}}</p>
+          </div>
+          <div class="detail">
+            <a href="/pets/{{pet._id}}">Detail</a>
 
-          <button
-            onclick="like(event, '{{pet.id}}')"
-            type="submit"
-          >Favorito</button>
-          TENGO {{pet.likes.length}} LIKES
+            {{!-- TENGO
+          {{pet.likes.length}}
+          LIKES --}}
+          </div>
         </div>
       </div>
     </div>
