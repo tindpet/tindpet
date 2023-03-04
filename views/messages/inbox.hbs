@@ -1,0 +1,17 @@
+<div class="message-container">
+  <h1>Messages</h1>
+  <div class="messages">
+    <div class="msg">
+      <h2>Inbox</h2>
+      {{#if allMsg}}
+      {{> petcard pets=allMsg}}
+      {{/if}}
+    </div>
+    <div class="msg">
+      <h2>New Messages</h2>
+      {{#if newMsgs}}
+      {{> petcard pets=newMsgs}}
+      {{/if}}
+    </div>
+  </div>
+</div>

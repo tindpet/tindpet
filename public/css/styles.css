@@ -4,6 +4,7 @@
 @import url("./sections/detail.pet.css");
 @import url("./sections/menu.css");
 @import url("./sections/footer.css");
+@import url("./sections/inbox.css");
 
 @font-face {
   font-family: myFirstFont;

@@ -16,6 +16,14 @@ const schemaMessage = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Pet",
     },
+    isReadByFrom: {
+      type: Boolean,
+      default: false,
+    },
+    isReadByTo: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

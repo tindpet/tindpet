@@ -26,7 +26,6 @@ module.exports.login = (req, res) => {
 module.exports.doLogin = (req, res, next) => {
   UserModel.findOne({ email: req.body.email })
     .then((user) => {
-      console.log("login");
       return bcrypt
         .compare(req.body.password, user.password)
         .then((isAuthenticated) => {
