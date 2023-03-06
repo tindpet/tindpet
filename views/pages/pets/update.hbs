@@ -9,21 +9,41 @@
       <div class="form-section">
         <label for="image">We need a photo for getting to know your animal!</label>
         <input
-          id="#input-photo-pet"
+          id="input-photo-pet"
           type="file"
           accept="image"
           name="image"
           onchange="previewImage(event, '#pet-img-preview')"
         />
       </div>
-      name<input type="text" name="name" value="{{pet.name}}">
-      age<input type="number" name="age" value="{{pet.age}}">
-      specie<input type="text" name="specie" value="{{pet.specie}}">
-      gender<input type="text" name="gender" value="{{pet.gender}}">
-    </div>
-      <div class="form-section">
-        <label for="about">How is he/she? What specie is, what is his/her charaacter...</label>
-        <textarea name="about" cols="30" rows="10">{{pet.description}}</textarea>
+      <div class="info">
+        <div class="form-section">
+          <label for="name">What's his/her name?</label>
+          <input type="text" name="name" value="{{pet.name}}"/>
+        </div>
+        <div class="form-section">
+          <label for="gender">And his/her gender?</label>
+          <input type="text" name="gender" value="{{pet.gender}}"/>
+        </div>
+        <div class="form-section">
+          <label for="specie">And his/her specie?</label>
+          <input type="text" name="specie" value="{{pet.specie}}"/>
+        </div> 
+        <div class="form-section">
+          <label for="age">How old is he/she?</label>
+          <input type="number" name="age" value="{{pet.age}}"/>
+        </div>
       </div>
+    </div>
+    <div class="form-section">
+      <label for="description">How is he/she? What is his/her character?</label>
+      <textarea name="description" cols="30" rows="10">{{pet.description}}</textarea>
+    </div>
 
-      <button type="submit">Update</button>
+    <button type="submit">Update</button>
+    
+  </form>
+  <form action="/pets/{{pet._id}}/delete" method="POST">
+    <button type="submit" class="delete-pet">DELETE</button>
+  </form>
+</div>

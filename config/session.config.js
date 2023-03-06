@@ -5,7 +5,7 @@ const User = require("../models/user.model");
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1/tindpet";
 
 module.exports.session = session({
-  secret: process.env.SESSION_SECRET || "secretito",
+  secret: process.env.SESSION_SECRET || "secret",
   resave: false,
   saveUninitialized: false,
   cookie: {

@@ -4,7 +4,7 @@
   <form action="/user/{{user.id}}" method="POST" enctype="multipart/form-data">
     <div class="image">
       <div class="preview">
-       <img id="user-img-preview" src="{{user.image}}" />
+        <img id="user-img-preview" src="{{user.image}}" />
       </div>
       <div class="form-section">
         <label for="image">We would like you to have a photo so we can meet you</label>
@@ -19,23 +19,27 @@
       <div class="form-section">
         <label for="about">Tell us something about yourself and why are you
           joining us?</label>
-        <textarea name="description" cols="30" rows="10">{{user.description}}</textarea>
+        <textarea
+          name="description"
+          cols="30"
+          rows="10"
+        >{{user.description}}</textarea>
       </div>
     </div>
 
     <div class="info">
       <div class="form-section">
         <label for="name">What's your name?</label>
-        <input type="text" name="name" value="{{user.name}}"/>
+        <input type="text" name="name" value="{{user.name}}" />
       </div>
       <div class="form-section">
         <label for="lastname">And your last name?</label>
-        <input type="text" name="lastname" value="{{user.lastname}}"/>
+        <input type="text" name="lastname" value="{{user.lastname}}" />
       </div>
       <div class="form-section">
         <label for="email">Could you give us an email so that you can log in and
           contact you too?</label>
-        <input type="email" name="email" value="{{user.email}}"/>
+        <input type="email" name="email" value="{{user.email}}" />
       </div>
       <div class="form-section">
         <label for="password">Now a password so you can log in</label>
@@ -51,7 +55,12 @@
 
       <div class="form-section">
         <button type="submit">Update</button>
+
       </div>
     </div>
+  </form>
+
+  <form action="/users/{{pet._id}}/delete" method="POST">
+    <button type="submit" class="delete-user">DELETE</button>
   </form>
 </div>

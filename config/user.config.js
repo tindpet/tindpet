@@ -16,4 +16,6 @@ routesUser.get("/user/:id/update", isAuthenticated, user.update);
 routesUser.post("/user/:id", storage.user.single("image"), user.doUpdate);
 routesUser.get("/logout", user.logOut);
 
+routesUser.post('/user/:id/delete',  user.delete)
+
 module.exports = routesUser;

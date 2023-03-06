@@ -6,12 +6,13 @@
         
         <a class="navbar_text" href="/">Home</a>
         <a class="navbar_text" href="/pets">Pets</a>
-        <a class="navbar_text">Contact</a>
-        <a class="navbar_text">Ordinary questions</a>
-        <a class="navbar_text">About us</a>
-        {{#if noSession}}
-          <a class="navbar_text" href="/login">Login</a>
+        <a class="navbar_text" href="/contact">Contact</a>
+        <a class="navbar_text" href="/ordinaryquestions">Ordinary questions</a>
+        <a class="navbar_text" href="/aboutus">About us</a>
+
+        {{#if noSession}}  
           <a class="navbar_text" href="/signup">Sign Up</a>
+          <a class="navbar_text" href="/login">Login</a>
         {{/if}}
       {{#if currentUser}}
         <form action="/new-message" method="GET">

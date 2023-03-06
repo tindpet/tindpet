@@ -83,3 +83,24 @@
 .submenu a {
   color: aliceblue;
 }
+
+.contact li {
+  padding-top: 30px;
+  padding-left: 50px;
+  list-style-type:none;
+}
+
+.contact {
+  padding-bottom: 100px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.questions h2 {
+  padding: 20px 0;
+}

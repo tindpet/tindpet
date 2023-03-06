@@ -19,4 +19,6 @@ routesPets.post("/pets/:id", storage.pet.single("image"), pets.doUpdate);
 
 routesPets.post("/pets/:id/like", pets.like);
 
+routesPets.post('/pets/:id/delete',  pets.delete)
+
 module.exports = routesPets;

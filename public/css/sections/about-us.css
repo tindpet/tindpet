@@ -1,0 +1,31 @@
+.photo-aboutUs {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-bottom: 8rem;
+}
+
+.intro-aboutUs {
+    padding: 50px;
+}
+
+.aboutUs .developer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

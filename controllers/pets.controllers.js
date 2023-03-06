@@ -114,3 +114,11 @@ module.exports.like = (req, res, next) => {
     .then((like) => res.json({ likes }))
     .catch(next);
 };
+
+module.exports.delete = (req, res, next) => {
+  Pet.findByIdAndDelete(req.params.id)
+  .then((pet) => {
+    res.redirect("/pets") 
+  })
+  .catch(next)
+}

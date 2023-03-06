@@ -87,3 +87,11 @@ module.exports.logOut = (req, res, next) => {
   req.session.destroy();
   res.redirect("/");
 };
+
+module.exports.delete = (req, res, next) => {
+  UserModel.findByIdAndDelete(req.params.id)
+  .then((user) => {
+    res.redirect("/signup")
+  })
+  .catch(next)
+}
