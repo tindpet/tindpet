@@ -28,7 +28,7 @@ module.exports.loadSessionUser = (req, res, next) => {
       .then((user) => {
         req.user = user;
         res.locals.currentUser = user;
-        res.locals.userProtector = user.role === "protector";
+        // res.locals.userProtector = user.role === "protector";
         next();
       })
       .catch((error) => next(error));

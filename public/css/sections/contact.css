@@ -1,0 +1,17 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.contact-container .general h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-container .general p {
+  font-size: 1.5rem;
+}

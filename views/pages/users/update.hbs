@@ -52,15 +52,12 @@
           <option value="protector">I'm a protector</option>
         </select>
       </div>
-
       <div class="form-section">
         <button type="submit">Update</button>
-
       </div>
     </div>
   </form>
-
-  <form action="/users/{{pet._id}}/delete" method="POST">
+  <form action="/user/{{currentUser.id}}/delete" method="POST">
     <button type="submit" class="delete-user">DELETE</button>
   </form>
 </div>

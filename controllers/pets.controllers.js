@@ -21,32 +21,34 @@ module.exports.list = (req, res) => {
   Pet.find(criteria)
     .populate("likes")
     .then((pets) => {
-      if (req.user.role === "adopter") {
-        const newPets = JSON.parse(JSON.stringify(pets));
+      if (req.user) {
+        if (req.user.role === "adopter") {
+          const newPets = JSON.parse(JSON.stringify(pets));
 
-        newPets.map((pet) => {
-          pet.button = true;
-          return pet;
-        });
-
-        return Like.find({ user: req.user })
-          .populate("pet")
-          .then((likes) => {
-            if (likes) {
-              likes.forEach((like) => {
-                newPets.map((pet) => {
-                  if (pet._id === like.pet.id) {
-                    pet.like = true;
-                  }
-                  return pet;
-                });
-              });
-            }
-            res.render("pages/pets/pets", {
-              pets: newPets,
-              query: req.query,
-            });
+          newPets.map((pet) => {
+            pet.button = true;
+            return pet;
           });
+
+          return Like.find({ user: req.user })
+            .populate("pet")
+            .then((likes) => {
+              if (likes) {
+                likes.forEach((like) => {
+                  newPets.map((pet) => {
+                    if (pet._id === like.pet.id) {
+                      pet.like = true;
+                    }
+                    return pet;
+                  });
+                });
+              }
+              res.render("pages/pets/pets", {
+                pets: newPets,
+                query: req.query,
+              });
+            });
+        }
       }
       return res.render("pages/pets/pets", {
         pets,
@@ -117,8 +119,8 @@ module.exports.like = (req, res, next) => {
 
 module.exports.delete = (req, res, next) => {
   Pet.findByIdAndDelete(req.params.id)
-  .then((pet) => {
-    res.redirect("/pets") 
-  })
-  .catch(next)
-}
+    .then((pet) => {
+      res.redirect("/pets");
+    })
+    .catch(next);
+};

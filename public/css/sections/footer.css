@@ -9,38 +9,16 @@
   background-position: left;
   background-size: cover;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: repeat(4, 1fr);
   min-height: 6rem;
 }
 
-.footer .info {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 3rem;
-  padding-bottom: .2rem;
-  background-color: transparent;
-}
-
-.footer .info .text {
+.footer .text {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   background-color: transparent;
   color: aliceblue;
-}
-
-.footer .info .text h2,
-  .footer .info .text p {
-  background-color: transparent;
-}
-
-.footer .info .text h2 {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.footer .info .text p {
-  font-size: 1rem;
+  padding: 3rem 0 1rem 0;
 }

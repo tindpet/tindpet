@@ -31,7 +31,7 @@ module.exports.doLogin = (req, res, next) => {
         .then((isAuthenticated) => {
           if (isAuthenticated) {
             req.session.userId = user.id;
-            res.redirect("/pets");
+            return res.redirect("/pets");
           }
           return res.sendStatus(401);
         });
